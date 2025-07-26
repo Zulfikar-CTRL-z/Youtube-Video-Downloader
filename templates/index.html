@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Video Downloader</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>YouTube Video Downloader</h1>
+    </header>
+
+    <main>
+      <form action="/search" method="post">
+        <input type="url" name="url" placeholder="Paste YouTube video URL here" required />
+        <button type="submit" >Search</button>
+      </form>
+    </main>
+
+    <footer>
+        <!-- <section class="how-to">
+            <h2>How to Download Videos</h2>
+            <ol>
+              <li>Copy the URL of the YouTube video you want to download.</li>
+              <li>Paste the video link into the input field above.</li>
+              <li>Click the <strong>"Download"</strong> button.</li>
+              <li>Choose the video format or quality (if options appear), and the download will begin.</li>
+            </ol>
+          </section> -->
+          
+      <p>Need help? Visit our <a href="#">Help Center</a></p>
+    </footer>
+  </div>
+</body>
+</html>
